@@ -1,0 +1,4 @@
+make clean
+make all
+sudo modprobe -r usb-storage && modprobe usb-storage
+sudo st-flash write ./build/myshell.bin 0x8000000
